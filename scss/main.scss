@@ -1,0 +1,47 @@
+h1 {
+    color: pink;
+}
+
+.content-hero {
+    background: #999999;
+    padding: 30px 0px;
+    .btn-success{
+        margin-top: 60px;
+    }
+}
+
+.content-feature {
+    padding: 30px 0;
+    background: #f4f4f4;
+    @for $i from 1 through 5 {
+        .feature-#{$i}{
+            padding: 10px * $i;
+            background: green;
+        }
+    }
+}
+
+.content-testimoni{
+    padding: 30px 0;
+}
+
+.main-footer {
+    background: rgb(13, 14, 13);
+    padding: 30px 0;
+    color: #ffffff;
+    input[type="text"] {
+        background: pink;
+    }
+}
+
+.home-article {
+    p:first-letter {
+        margin-left: 30px;
+    }
+
+    p:first-line {
+        font-weight: bold;
+        color: blue;
+    }
+
+}
